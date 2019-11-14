@@ -1,0 +1,522 @@
+[33mcommit 993f6e6dd34bd2e1bed5381de4315c395055e27f[m[33m ([m[1;36mHEAD -> [m[1;32mrelease-V3[m[33m)[m
+Author: Dipika <dipikat987@gmail.com>
+Date:   Thu Nov 14 20:23:03 2019 +0530
+
+    first commit
+
+[33mcommit e80f0daeadc5d286ea06a171875804e6c645e5fb[m
+Author: Dipika <dipikat987@gmail.com>
+Date:   Thu Nov 14 20:21:52 2019 +0530
+
+    first commit
+
+[33mcommit 2bf357ae71401f1623cb1bf6157f277a8f78813e[m[33m ([m[1;31morigin/release-V3[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: joeldudleyr3 <joel.dudley@r3.com>
+Date:   Tue Nov 20 14:54:49 2018 +0000
+
+    Tutorial two solution.
+
+[33mcommit c6d38913a40a17224090c083b4099186de48daeb[m
+Author: joeldudleyr3 <joel.dudley@r3.com>
+Date:   Tue Nov 20 14:44:58 2018 +0000
+
+    Implements tutorial one solution.
+
+[33mcommit 7b1999e03f8b4180d82c11fbe2758330c786933e[m
+Author: joeldudleyr3 <joel.dudley@r3.com>
+Date:   Wed Nov 7 14:47:13 2018 +0000
+
+    Removes RPC connection as a field.
+
+[33mcommit 53757e1d42457effc9e17d0363de7b392b5542b3[m
+Author: joeldudleyr3 <joel.dudley@r3.com>
+Date:   Wed Nov 7 14:44:07 2018 +0000
+
+    Updates template endpoint name.
+
+[33mcommit 1ed7a4b4e0dbc2a4c4889ee4c8b9ab7556b1e044[m
+Author: joeldudleyr3 <joel.dudley@r3.com>
+Date:   Tue Nov 6 15:33:05 2018 +0000
+
+    Unneeded whitespace.
+
+[33mcommit 8ca0b7ff5962e9ad9290887873cd31ac3cd3594c[m
+Merge: 1d98975 fc4a09b
+Author: Joel Dudley <joel.dudley@r3cev.com>
+Date:   Tue Nov 6 14:54:25 2018 +0000
+
+    Merge pull request #43 from corda/joel-separate-rpc
+    
+    Switches from deprecated webserver to Spring. Clean-up.
+
+[33mcommit fc4a09b39779942eb4114439d2f0f1b8485282eb[m
+Author: joeldudleyr3 <joel.dudley@r3.com>
+Date:   Tue Nov 6 13:43:21 2018 +0000
+
+    Removes corda-node dependency. Adds logging dependencies.
+
+[33mcommit 8d8583e4e81e2b485ed7b9c13e1b2acf456ac78e[m
+Author: joeldudleyr3 <joel.dudley@r3.com>
+Date:   Tue Nov 6 13:35:34 2018 +0000
+
+    Consistent use of rootProject. Fixes integration test folder name. Readds corda-node dependency.
+
+[33mcommit ca0ffa20cb552991380f364a28b84384e7e6d044[m
+Author: joeldudleyr3 <joel.dudley@r3.com>
+Date:   Tue Nov 6 13:21:36 2018 +0000
+
+    Specifies main Spring class for webserver.
+
+[33mcommit c1129c7d33307fc4512f82678d3a35020964f923[m
+Author: joeldudleyr3 <joel.dudley@r3.com>
+Date:   Tue Nov 6 12:56:36 2018 +0000
+
+    Adds README section on extending the template. Removes unused imports.
+
+[33mcommit b580f6e4ee29f4f5f29a3a33923821b4985284eb[m
+Author: joeldudleyr3 <joel.dudley@r3.com>
+Date:   Tue Nov 6 12:49:56 2018 +0000
+
+    Self-review.
+
+[33mcommit 2727457d84ae03d97695090ab8262b67f722d887[m
+Author: joeldudleyr3 <joel.dudley@r3.com>
+Date:   Tue Nov 6 09:53:57 2018 +0000
+
+    Initial cut at replacing built-in webserver.
+
+[33mcommit 1d98975fa6fa9267aeb105704c0507c25288025e[m
+Author: joeldudleyr3 <joel.dudley@r3.com>
+Date:   Tue Nov 6 09:25:20 2018 +0000
+
+    Wrong letter case.
+
+[33mcommit 1538e6160eb7f8392dda3a015558c00a0881976d[m
+Author: joeldudleyr3 <joel.dudley@r3.com>
+Date:   Tue Nov 6 09:22:50 2018 +0000
+
+    Updates outdated comment.
+
+[33mcommit eeabd0ebc3fee3206a09d62124fa9a05ee012d59[m
+Author: joeldudleyr3 <joel.dudley@r3.com>
+Date:   Tue Nov 6 09:22:11 2018 +0000
+
+    Updates outdated comment.
+
+[33mcommit c67bcf1f6ff9a5e7335cf25e09846c649cb0cd5b[m
+Author: joeldudleyr3 <joel.dudley@r3.com>
+Date:   Tue Nov 6 09:11:57 2018 +0000
+
+    Modifies client so that it does not depend on TemplateState and simplifies it.
+
+[33mcommit 1f6c9bcd27693397e0a4fde7cd4fd96ed4428dd6[m
+Author: Joel Dudley <joel.dudley@r3cev.com>
+Date:   Wed Oct 31 11:14:39 2018 +0000
+
+    Update README.md
+
+[33mcommit 76a017b1d479beeea248c3cf6143abb2904aa622[m
+Author: Joel Dudley <joel.dudley@r3cev.com>
+Date:   Wed Oct 31 10:00:47 2018 +0000
+
+    Update build.gradle
+
+[33mcommit f971a302937bbce3c13b9082f54c3e3b09ab558b[m
+Author: Joel Dudley <joel.dudley@r3cev.com>
+Date:   Mon Oct 22 07:59:02 2018 +0200
+
+    Update StatesAndContracts.kt
+
+[33mcommit 3ffb7e1f65db0451e673261433e7586801b6f41c[m
+Author: Clinton <clintonxa@gmail.com>
+Date:   Mon Sep 3 18:22:48 2018 +0100
+
+    Updated buildscript repositories to reduce dependency on Jitpack (#42)
+    
+    * Correcting repository order and adding corda dependencies as a repository
+    * Corrected repository list by adding corda dependencies and moved Jitpack to the bottom. Also moved all repositories blocks to root of project
+    * Replaced with corda virtual repo
+
+[33mcommit ecd326c76be4b22a280f2aa1055b1e647f19310f[m
+Author: joeldudleyr3 <joel.dudley@r3.com>
+Date:   Thu Aug 9 09:22:49 2018 +0100
+
+    Removes unnecessary getter.
+
+[33mcommit f7ff7f2c74e179d9d252ecd10ff76dd5dc3b4ebc[m
+Author: joeldudleyr3 <joel.dudley@r3.com>
+Date:   Thu Aug 9 09:21:51 2018 +0100
+
+    Moves contract ID into contract.
+
+[33mcommit dd42e6481bd7f7acaba69c7978e7b6c7b68d9672[m
+Author: Joel Dudley <joel.dudley@r3cev.com>
+Date:   Thu Aug 2 11:05:50 2018 +0100
+
+    Update build.gradle
+
+[33mcommit 5dbb5df609690ed15d57f6658258d12a9502ce10[m
+Author: Anthony Keenan <anthonykeenan@gmail.com>
+Date:   Fri Jul 20 21:42:06 2018 +0100
+
+    Bump version to Corda v3.2
+
+[33mcommit 11517473e2b18df044b4523e7c5f235b28d8aa26[m
+Author: Joel Dudley <joel.dudley@r3cev.com>
+Date:   Mon Jul 16 12:57:49 2018 +0100
+
+    Update README.md
+
+[33mcommit 89df85e0e945f09e1cb6de89256370f140f1149e[m
+Author: Joel Dudley <joel.dudley@r3cev.com>
+Date:   Mon Jul 9 20:12:00 2018 +0100
+
+    Update NodeDriver.kt
+
+[33mcommit 33abe4d601d5535383f0cf7314f28f11a52ec310[m
+Merge: ed0b9cf 1ee8464
+Author: Dominic Fox <40790090+distributedleetravis@users.noreply.github.com>
+Date:   Fri Jul 6 11:40:23 2018 +0100
+
+    Merge pull request #40 from corda/dominic-template-readability
+    
+    Minor formatting changes, and refactoring to tests to clarify intent
+
+[33mcommit 1ee8464557ea812cbea0ab5a98633a3181219a7b[m
+Author: Dominic Fox <dominic.fox@r3.com>
+Date:   Fri Jul 6 11:21:08 2018 +0100
+
+    Restore block bodies
+
+[33mcommit 379468f5c0eca684a539a85eb8dce83e4362ee0a[m
+Author: Dominic Fox <dominic.fox@r3.com>
+Date:   Wed Jul 4 14:06:55 2018 +0100
+
+    Make utility functions IDE-foldable
+
+[33mcommit 1c09c1ffd50a898228418f2c9c51ac8e6dcb482c[m
+Author: Dominic Fox <dominicfox@16LHR-MAC33.local>
+Date:   Wed Jul 4 11:49:33 2018 +0100
+
+    Minor formatting changes, and some refactoring to tests to clarify intent
+
+[33mcommit ed0b9cfcdec1bb790310879f037384afc3f172e4[m
+Merge: ff3c898 4e76fc7
+Author: Joel Dudley <joel.dudley@r3cev.com>
+Date:   Mon Jul 2 09:24:26 2018 +0100
+
+    Merge pull request #39 from cxyzhang0/sean-V3
+    
+    remove unnecessary certificates
+
+[33mcommit 4e76fc72dce4b9d3cca6fd4ea304a9afb3413776[m
+Author: Sean Zhang <sean.zhang@wellsfargo.com>
+Date:   Fri Jun 29 18:13:58 2018 -0700
+
+    remove unnecessary certificates
+
+[33mcommit ff3c898039d92c88c3000f9cb273e7f566cb4cfb[m
+Author: Joel Dudley <joel.dudley@r3cev.com>
+Date:   Fri Jun 8 15:59:53 2018 +0100
+
+    Update NodeDriver.kt
+
+[33mcommit ac4f9131da2d6ee613356a547dcdc473f9e580fb[m
+Author: Joel Dudley <joeldudleyr3@users.noreply.github.com>
+Date:   Wed May 2 09:28:13 2018 +0100
+
+    Update build.gradle
+
+[33mcommit 501185ad6248bf6eecfbb9e789c9c2c5af92f2ce[m
+Merge: 833c336 a5d0775
+Author: Katelyn Baker <katelyn.baker@r3.com>
+Date:   Thu Apr 12 13:50:09 2018 +0100
+
+    Merge pull request #38 from corda/kat/release/updatePluginVersion
+    
+    RELEASE - update plugin version for 3.1
+
+[33mcommit a5d0775448fd74199750679e52b579d5ab241f06[m
+Author: Katelyn Baker <katelyn.baker@r3.com>
+Date:   Thu Apr 12 12:08:46 2018 +0100
+
+    RELEASE - update plugin version for 3.1
+
+[33mcommit 833c3368ab35a5a19d13ebfb85b77cc865e5ed9d[m
+Author: joeldudleyr3 <joel.dudley@r3.com>
+Date:   Sat Apr 7 08:22:19 2018 +0100
+
+    Updates name of notary node. Updates section about running nodes across machines.:
+
+[33mcommit 68a90c365d67305fa2db9adafda60aef57c437f5[m
+Author: Joel Dudley <joeldudleyr3@users.noreply.github.com>
+Date:   Thu Mar 22 16:48:45 2018 +0000
+
+    Update StatesAndContracts.kt
+
+[33mcommit 8864fc6f39fb741152b55abbdeab0da2879ae50a[m
+Author: Joel Dudley <joeldudleyr3@users.noreply.github.com>
+Date:   Mon Mar 12 17:43:55 2018 +0000
+
+    Update build.gradle
+
+[33mcommit a6fdfe0eff1b01c84d2a02602011807926965a40[m
+Merge: b485a72 0687d47
+Author: Konstantinos Chalkias <konstantinos.chalkias@r3.com>
+Date:   Tue Mar 6 09:49:12 2018 +0000
+
+    Merge pull request #34 from corda/kostas-CORDA-1145-release-V3
+    
+    CORDA-1145 link to troubleshooting docs
+
+[33mcommit 0687d4704b4fe0625d73a47ef01ee6c0308649fc[m
+Author: Konstantinos Chalkias <konstantinos.chalkias@r3.com>
+Date:   Mon Mar 5 17:00:58 2018 +0000
+
+    CORDA-1145 link to troubleshooting docs
+
+[33mcommit b485a729e8778892c3e642811ef566ee9697d5bd[m
+Author: Joel Dudley <joeldudleyr3@users.noreply.github.com>
+Date:   Thu Mar 1 17:38:00 2018 +0000
+
+    Bumps versions.
+
+[33mcommit e4bc03c6e99ec596e217ddd882d9c773ec4436c4[m
+Author: joeldudley <joeldudley@outlook.com>
+Date:   Fri Feb 16 14:05:10 2018 +0000
+
+    Updates build.gradle file.
+
+[33mcommit 2a451a1261e1df663dec93c27a6aa1efada6d76a[m
+Author: joeldudley <joeldudley@outlook.com>
+Date:   Thu Feb 15 20:34:23 2018 +0000
+
+    Adds additional node to deployNodes.
+
+[33mcommit 1725212dc417ff1459b763d161b85a1c60edf598[m
+Author: joeldudley <joeldudley@outlook.com>
+Date:   Thu Feb 15 20:31:13 2018 +0000
+
+    Update to V3.
+
+[33mcommit cce511cdb4eb26287fe633287c8181aa3f6584fd[m
+Merge: 78b1dcc 2d94dcb
+Author: Joel Dudley <joeldudleyr3@users.noreply.github.com>
+Date:   Tue Jan 30 14:55:05 2018 +0000
+
+    Adds webserver integration test. Clears up other integration test.
+
+[33mcommit 2d94dcb7cd5cda4937fcc8e2e16ea32307c45c50[m
+Author: joeldudleyr3 <joel.dudley@r3.com>
+Date:   Mon Jan 29 16:30:49 2018 +0000
+
+    Adds webserver integration test. Clears up other integration test.
+
+[33mcommit 78b1dccd5b3cc33681fe1179f342e81777c5b2c8[m
+Author: joeldudleyr3 <joel.dudley@r3.com>
+Date:   Wed Jan 17 18:43:04 2018 +0000
+
+    Renames the Controller. Updates run configs.
+
+[33mcommit fd5573505ee0afcfaeb7064a3c1a7790092f8e36[m
+Author: Joel Dudley <joeldudleyr3@users.noreply.github.com>
+Date:   Wed Jan 17 15:36:48 2018 +0000
+
+    Updates outdated node.conf information.
+
+[33mcommit bc3d5f98cebbe214835a795187f06a4881ce14f9[m
+Merge: faf8f06 8a7368b
+Author: Joel Dudley <joeldudleyr3@users.noreply.github.com>
+Date:   Wed Jan 10 15:58:28 2018 +0000
+
+    Revert "Mainly contract stuff and test"
+
+[33mcommit 8a7368bf8b6ba0970e32210cd0da2f0ee0f14e07[m
+Merge: 53e44b9 faf8f06
+Author: Joel Dudley <joeldudleyr3@users.noreply.github.com>
+Date:   Wed Jan 10 15:58:18 2018 +0000
+
+    Merge branch 'release-V2' into cais-fix-bad-commit
+
+[33mcommit 53e44b95dba487f5d671a7f155354b2c57f75298[m
+Merge: a2d9d3f faf8f06
+Author: Joel Dudley <joeldudleyr3@users.noreply.github.com>
+Date:   Wed Jan 10 15:57:50 2018 +0000
+
+    Merge branch 'release-V2' into cais-fix-bad-commit
+
+[33mcommit a2d9d3f1e69589e8700e080c43e7f61d41d3187c[m
+Author: CaisR3 <cais.manai@r3.com>
+Date:   Wed Jan 10 15:44:05 2018 +0000
+
+    Revert "Mainly contract stuff and test"
+    
+    This reverts commit 9e0c0cf9160afdbfe907a689c1eb081d346c9c14.
+
+[33mcommit faf8f06871a06d6cbd3b0d2c452a699370ea6d2c[m
+Merge: 9e0c0cf 47ea53a
+Author: Joel Dudley <joeldudleyr3@users.noreply.github.com>
+Date:   Wed Jan 10 15:35:34 2018 +0000
+
+    Reverts changes made in error. Adds extension for package groups.
+
+[33mcommit 47ea53ad08a2957d44619a69efc825a6ac018155[m
+Merge: d4c9de0 9e0c0cf
+Author: Joel Dudley <joeldudleyr3@users.noreply.github.com>
+Date:   Wed Jan 10 15:29:49 2018 +0000
+
+    Merge branch 'release-V2' into joel-group-ext
+
+[33mcommit d4c9de044711a678995865ce8b4bc36386b6a435[m
+Author: joeldudleyr3 <joel.dudley@r3.com>
+Date:   Wed Jan 10 15:25:41 2018 +0000
+
+    Reverts changes made in error. Adds extension for package groups.
+
+[33mcommit 9e0c0cf9160afdbfe907a689c1eb081d346c9c14[m
+Author: CaisR3 <cais.manai@r3.com>
+Date:   Tue Jan 9 17:46:23 2018 +0000
+
+    Mainly contract stuff and test
+
+[33mcommit 7d44f93cca45e4e4499e089b687c7955425a0c2a[m
+Author: RogerWillis <roger.willis@r3cev.com>
+Date:   Tue Nov 7 13:12:33 2017 +0000
+
+    Bumped version number.
+
+[33mcommit 3da605481f9a978ebd99e140bc75f23443b847eb[m
+Author: RogerWillis <roger.willis@r3cev.com>
+Date:   Fri Nov 3 17:52:34 2017 +0000
+
+    Fixes bug where JARs are not built as the package names are wrong.
+
+[33mcommit ca9048d3cf97191417a692e46f5e8e4af40697cf[m
+Merge: baa7389 c61b6c2
+Author: Joel Dudley <joeldudleyr3@users.noreply.github.com>
+Date:   Thu Oct 26 16:45:16 2017 +0100
+
+    Split of states and contracts vs other sources.
+
+[33mcommit c61b6c2ba67fb1fb350174491d6a5caa2b5341f2[m
+Author: joeldudleyr3 <joel.dudley@r3.com>
+Date:   Thu Oct 26 16:19:29 2017 +0100
+
+    Addresses review comments.
+
+[33mcommit aec6097ce3fa8840e948ca9a0a4baee877c1e724[m
+Author: joeldudleyr3 <joel.dudley@r3.com>
+Date:   Thu Oct 26 13:40:54 2017 +0100
+
+    Splits states and contracts from other source files so that only shared structures have to be sent over the wire.
+
+[33mcommit baa73893ce667d913a2614c85bd3771ebc94db23[m
+Author: joeldudleyr3 <joel.dudley@r3.com>
+Date:   Fri Oct 20 17:19:35 2017 +0100
+
+    Adds example of setting test packages to scan.
+
+[33mcommit 7cca823aabbfc784c40732e8f3832d0944d7515b[m
+Author: Joel Dudley <joeldudleyr3@users.noreply.github.com>
+Date:   Mon Oct 16 16:58:55 2017 +0100
+
+    Adds header to separate flows and plugins
+
+[33mcommit c7d3b67dc8fbf8b3729f3b74d9deac7e0faedbaf[m
+Author: joeldudleyr3 <joel.dudley@r3.com>
+Date:   Mon Oct 16 10:16:57 2017 +0100
+
+    Updates package structure.
+
+[33mcommit d8a6f5dc789941649bcf757b40479b5d18893cbc[m
+Author: joeldudleyr3 <joel.dudley@r3.com>
+Date:   Thu Oct 12 14:04:38 2017 +0100
+
+    Cosmetic changes.
+
+[33mcommit c09947183a4e92e5b2ffb01eacc70a378a9124b8[m
+Author: Joel Dudley <joeldudleyr3@users.noreply.github.com>
+Date:   Thu Oct 12 00:14:20 2017 +0100
+
+    Removes reference to checking out milestone.
+
+[33mcommit 69e437c8f8c0ba66a6ebfe8fe9c4189af23bf4d2[m
+Author: josecoll <jose.coll@r3cev.com>
+Date:   Mon Oct 2 17:13:01 2017 +0100
+
+    Update corda version tag to 1.0.0
+
+[33mcommit 8efc9f75d4a7087c65ad422aff81116cbd7e1936[m
+Merge: 6f18204 9115f08
+Author: josecoll <jose.coll@r3cev.com>
+Date:   Mon Oct 2 10:28:59 2017 +0100
+
+    Merge pull request #27 from corda/parkri-plugin-update-M16
+    
+    Remove reference to CordaPluginRegistry and put a whitelist example in.
+
+[33mcommit 9115f080fa120a50197bef6735c22576c0ec5a04[m
+Author: rick.parker <rick.parker@r3cev.com>
+Date:   Mon Oct 2 10:16:23 2017 +0100
+
+    Remove reference to CordaPluginRegistry and put a whitelist example in.
+
+[33mcommit 6f182041786240304006e37cb610e9a7435db16d[m
+Merge: 7d03278 58cedc2
+Author: josecoll <jose.coll@r3cev.com>
+Date:   Fri Sep 29 20:06:09 2017 +0100
+
+    Merge pull request #24 from corda/colljos-cordapluginregistry
+    
+    Removed CordaPluginRegistry.
+
+[33mcommit 58cedc25b29cab9edc0f90731aed1667a7d3be53[m
+Author: josecoll <jose.coll@r3cev.com>
+Date:   Fri Sep 29 19:56:50 2017 +0100
+
+    Removed CordaPluginRegistry.
+
+[33mcommit 7d032784c16f9338af950cddecdb740a98cf62aa[m
+Merge: 24c3531 55d10c5
+Author: josecoll <jose.coll@r3cev.com>
+Date:   Fri Sep 29 14:25:42 2017 +0100
+
+    Merge pull request #23 from corda/colljos-upgrade-1-0-0-RC4
+    
+    Update corda version tag to 1.0.0-RC4
+
+[33mcommit 55d10c552ac22b7524bbb09ed7a0e6de351788ec[m
+Author: josecoll <jose.coll@r3cev.com>
+Date:   Fri Sep 29 14:20:18 2017 +0100
+
+    Update corda version tag to 1.0.0-RC4
+
+[33mcommit 24c3531105657d3942707be9bcc340050e367c5d[m
+Merge: 33f5d87 66497ef
+Author: josecoll <jose.coll@r3cev.com>
+Date:   Fri Sep 29 09:50:06 2017 +0100
+
+    Merge pull request #22 from corda/colljos-corda-660
+    
+    CORDA-660 Update reference to 1.0.0 release in README.md
+
+[33mcommit 66497ef2d1b467e0edec9fb9fcc1b98defa1d7f1[m
+Author: josecoll <jose.coll@r3cev.com>
+Date:   Thu Sep 28 18:33:16 2017 +0100
+
+    CORDA-660 Update reference to 1.0.0 release in README.md
+
+[33mcommit 33f5d8770359158339076133f501ae13c2086c14[m
+Merge: b3bb683 ab27b95
+Author: Roger Willis <roger.willis@r3cev.com>
+Date:   Thu Sep 28 09:37:27 2017 +0100
+
+    Merge pull request #20 from corda/colljos-upgrade-1-0-0-RC3
+    
+    Update corda version tag to 1.0.0-RC3
+
+[33mcommit ab27b95458f569d4843abb57f69177c5bc1a0dc7[m
+Author: josecoll <jose.coll@r3cev.com>
+Date:   Wed Sep 27 20:12:54 2017 +0100
+
+    Update corda version tag to 1.0.0-RC3
