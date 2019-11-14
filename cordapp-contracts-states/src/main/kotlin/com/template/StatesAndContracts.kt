@@ -75,7 +75,7 @@ class IOUContract : Contract {
 class IOUState(val from: Party,
                val to: Party,
                val amount: Int,
-               val tradeDate: Date = Date(),
+               val tradeDate: String = "Date",
                val status:String = "SUBMITTED",
                override val linearId: UniqueIdentifier = UniqueIdentifier()) : LinearState {
 

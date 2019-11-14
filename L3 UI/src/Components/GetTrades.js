@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "./Header";
 
-class GetTrades extends Component {
+class GetTrades extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -21,6 +21,7 @@ class GetTrades extends Component {
   }
 
   renderTableData() {
+    //return this.state.trades.map((trade, index) => {
     return this.state.trades.map((trade, index) => {
       const { tradeId, fromParty, toParty, amount, tradeDate, status } = trade; //destructuring
       return (

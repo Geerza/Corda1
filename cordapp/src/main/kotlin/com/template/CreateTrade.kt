@@ -7,17 +7,17 @@ import net.corda.core.flows.*
 import net.corda.core.identity.Party
 import net.corda.core.transactions.*
 import net.corda.core.utilities.ProgressTracker
-import net.corda.core.contracts.UniqueIdentifier
-import java.time.LocalDateTime
+
+
 
 // *********
 // * Flows *
 // *********
 @InitiatingFlow
 @StartableByRPC
-class CreateTrade(val otherParty: Party,
-                        val amountTrade: Int) : FlowLogic<SignedTransaction>() {
-//start CreateProductFlow iouValue: 30, otherParty: "O=PartyB,L=New York,C=US", productID: 01, productName: "Apple", productColour: "Red", status: "Available"
+class CreateTradeInitiator(val otherParty: Party,
+                        val amount: Int) : FlowLogic<SignedTransaction>() {
+//start CreateTradeInitiator otherParty: "O=BankB,L=New York,C=US", amountTrade: 123
     // run vaultQuery contractStateType: com.template.IOUState
     /** The progress tracker provides checkpoints indicating the progress of the flow to observers. */
     override val progressTracker = ProgressTracker()
@@ -29,7 +29,7 @@ class CreateTrade(val otherParty: Party,
         val notary = serviceHub.networkMapCache.notaryIdentities[0]
 
         // We create the transaction components.
-        val outputState = IOUState( ourIdentity, otherParty,amountTrade)
+        val outputState = IOUState( ourIdentity, otherParty,amount)
         val command = Command(IOUContract.Create(), listOf(ourIdentity.owningKey, otherParty.owningKey))
 
         // We create a transaction builder and add the components.
@@ -55,9 +55,9 @@ class CreateTrade(val otherParty: Party,
 
 }
 
-@InitiatedBy(CreateTrade::class)
+@InitiatedBy(CreateTradeInitiator::class)
 // post API for responding
-class IOUFlowResponder(val otherPartySession: FlowSession) : FlowLogic<SignedTransaction>() {
+class CreateTradeResponder(val otherPartySession: FlowSession) : FlowLogic<SignedTransaction>() {
     @Suspendable
     override fun call(): SignedTransaction {
         val signTransactionFlow = object : SignTransactionFlow(otherPartySession, SignTransactionFlow.tracker()) {

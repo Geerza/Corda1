@@ -17,7 +17,10 @@ class GetTradeById extends Component {
     e.preventDefault();
     const tradeId = this.state.tradeId;
     const port = localStorage.getItem("port");
-    fetch("http://localhost:" + port + "/trades/id?tradeId=" + tradeId, {
+    //fetch("http://localhost:" + port + "/trades/id?tradeId=" + tradeId, {
+      fetch("http://localhost:" + port + "/trades/id", {
+    
+    //fetch("http://localhost:" + port + "/trades/id=" + tradeId, {
       method: "GET",
       headers: {
         Accept: "application/json",
