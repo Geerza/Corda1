@@ -6,14 +6,16 @@ import net.corda.core.utilities.ProgressTracker
 import net.corda.core.contracts.UniqueIdentifier
 import net.corda.core.node.services.queryBy
 import net.corda.core.node.services.vault.QueryCriteria
-import java.util.*
+import com.template.IOUState
+
 
 // *********
 // * Flows *
 // *********
 @InitiatingFlow
 @StartableByRPC
-class SearchTrade(val tradeId: UniqueIdentifier) : FlowLogic<TradeModel>() {
+
+class SearchTrade(private val tradeId: String) : FlowLogic<TradeModel>() {
 
     /** The progress tracker provides checkpoints indicating the progress of the flow to observers. */
     override val progressTracker = ProgressTracker()
@@ -21,9 +23,10 @@ class SearchTrade(val tradeId: UniqueIdentifier) : FlowLogic<TradeModel>() {
     /** The flow logic is encapsulated within the call() method. */
     @Suspendable
     override fun call() : TradeModel {
-
-        val criteria = QueryCriteria.LinearStateQueryCriteria(linearId = listOf(tradeId))
+        val id = UniqueIdentifier.fromString(tradeId)
+        val criteria = QueryCriteria.LinearStateQueryCriteria(linearId = listOf(id))
         val stateAndRef = serviceHub.vaultService.queryBy<IOUState>(criteria).states.single()
+        //val stateAndRef = serviceHub.vaultService.queryBy<IOUState>(criteria).states.single()
         val inputState = stateAndRef.state.data
 
         return TradeModel(inputState.linearId.id.toString(),

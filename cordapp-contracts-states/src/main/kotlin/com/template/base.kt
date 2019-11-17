@@ -1,10 +1,9 @@
 package com.template
+
 import java.util.*
 import net.corda.core.serialization.CordaSerializable
 
 @CordaSerializable
-
-
 data class TradeModel(val tradeId: String?,
                       val fromParty: String?,
                         val toParty: String?,

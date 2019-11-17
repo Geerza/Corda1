@@ -4,9 +4,8 @@ import net.corda.core.contracts.*
 import net.corda.core.identity.*
 import net.corda.core.transactions.LedgerTransaction
 import net.corda.core.contracts.UniqueIdentifier
-import java.time.DateTimeException
-import java.time.LocalDateTime
 import java.util.*
+import net.corda.core.serialization.CordaSerializable
 
 // ************
 // * Contract *
@@ -27,7 +26,7 @@ class IOUContract : Contract {
         val command=tx.getCommand<CommandData>(0)
         var requiredSignature = command.signers
         val commandType =command.value
-        //val tradeDateTime = CurrentDate
+
         if (commandType is Create){
 
         requireThat {

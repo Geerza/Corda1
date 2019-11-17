@@ -21,7 +21,7 @@ class GetTrades extends React.Component {
   }
 
   renderTableData() {
-    //return this.state.trades.map((trade, index) => {
+    
     return this.state.trades.map((trade, index) => {
       const { tradeId, fromParty, toParty, amount, tradeDate, status } = trade; //destructuring
       return (

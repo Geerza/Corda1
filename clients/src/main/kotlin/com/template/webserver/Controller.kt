@@ -12,6 +12,9 @@ import org.springframework.http.HttpStatus
 import org.springframework.http.RequestEntity
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
+import com.template.IOUState
+
+
 
 
 val SERVICE_NAMES = listOf("Notary", "Network Map Service")
@@ -56,7 +59,7 @@ class Controller(rpc: NodeRPCConnection) {
                 rstate.to.nameOrNull().toString(),
                 rstate.amount,
                 rstate.tradeDate,
-                rstate.status.toString()
+                rstate.status
 
                 )
 
@@ -95,22 +98,18 @@ class Controller(rpc: NodeRPCConnection) {
     // Request API for searching trade
 
     //private fun searchTrade(@RequestParam tradeId: String) {
-    fun searchTrade(req: RequestEntity<TradeModel>): ResponseEntity<TradeModel> {
-        val linearId = UniqueIdentifier.fromString(req.body.tradeId!!)
+    fun searchTrade(@RequestParam tradeId:String): ResponseEntity<TradeModel> {
+        logger.info("Accessing getTradeById api")
+        //val linearId = UniqueIdentifier.fromString(req.body.tradeId!!)
         val flowHandle = proxy.startFlowDynamic(
                 SearchTrade::class.java,
-                linearId
+                tradeId
         )
-//        fun searchTrade(req: RequestEntity<TradeModel>): ResponseEntity<TradeModel> {
-//            val linearId = UniqueIdentifier.fromString(req.body.tradeId!!)
-//            val flowHandle = proxy.startFlowDynamic(
-//                    SearchTrade::class.java,
-//                    linearId
-//            )
             val result = flowHandle.use { flowHandle.returnValue.getOrThrow() }
             return ResponseEntity.status(201)
                     .body(result)
         }
+
     }
 
 
